@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://fitnessdiary.github.io/afitnessdiary.png" alt="Fitness Diary">
+</p>
 # Fitness Diary
 Welcome to Fitness Diary, your ultimate destination for all things fitness! Our mission is to empower you to achieve your health and fitness goals through high-quality content, expert advice, and trusted product recommendations.
 
