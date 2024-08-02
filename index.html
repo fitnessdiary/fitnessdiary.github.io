@@ -36,7 +36,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
 	<title>A Fitness Diary</title>
-	
+	<script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "Fitness Diary",
+          "url": "https://fitnessdiary.github.io/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://fitnessdiary.github.io/afitnessdiary.png{search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+        </script>
 	</head>
 	<body>
         <div class="bg-light nav-bg sticky-top">
