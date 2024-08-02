@@ -477,6 +477,11 @@ a.btn.btn-class:hover {
     margin-bottom: 10px;
     padding: 0 5px;
 }
+.row.article-tips {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+}
 h2.blog-head span {
     text-decoration: underline;
     text-underline-position: under;
