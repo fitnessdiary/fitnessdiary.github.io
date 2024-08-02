@@ -188,7 +188,14 @@ a.btn.btn-class:hover {
     font-weight: bold;
     padding: 20px 0 10px 0;
 }
-
+.row.articles{
+    display: grid;
+    justify-items: stretch;
+    justify-content: center;
+    align-items: stretch;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
 .content {
     padding: 20px;
     background: #fff;
@@ -431,11 +438,18 @@ a.btn.btn-class:hover {
 #chatbotInput button:hover {
     background-color: #555;
 }
+
 /*blog html css Start*/
 .bloghtml h2 {
     text-align: center;
     color: #e40d0d;
     font-weight: bold;
+}
+.col-sm.article-list.single-art-lst {
+    box-shadow: 1px 1px 10px #b3b3b3;
+}
+.row.single-art {
+    padding: 0 12px;
 }
 .article-list {
     overflow: hidden;
@@ -444,6 +458,24 @@ a.btn.btn-class:hover {
 }
 .article-list img {
     width: 100%;
+}
+.col.article-list {
+    box-shadow: 1px 1px 5px #0000005c;
+}
+.row.articles-inx {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+.row.articles-blog {
+    display: grid;
+    justify-items: stretch;
+    justify-content: center;
+    align-items: stretch;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 10px;
+    padding: 0 5px;
 }
 h2.blog-head span {
     text-decoration: underline;
@@ -523,6 +555,14 @@ figure.Portfolioimg {
     .footer-content div {
         margin: 10px 0;
         min-width: auto;
+    }
+    .row.articles,.row.articles-blog {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .row.article-tips {
+        display: grid;
+        justify-items: center;
+        justify-content: center;
     }
   
 }
