@@ -165,6 +165,12 @@ img.model-logo {
     width: 100%;
     overflow: hidden;
 }
+.post-body figure {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
 a.btn.btn-class {
     border: 1px solid #ccc;
     margin: 10px 0;
@@ -301,6 +307,24 @@ a.btn.btn-class:hover {
     color: #fff;
 }
 /*cpa button End*/
+
+/*Post-Aside Start*/
+.col-sm.post-aside p {
+    padding: 0 10px;
+    font-size: 20px;
+    text-align: justify;
+}
+.col-sm.post-aside h3 {
+    padding: 5px 10px;
+    text-align: justify;
+    font-family: system-ui;
+}
+aside.bd-sidebar img {
+    padding: 0 10px;
+}
+/*Post Aside end*/
+
+/*Footer Start*/
 .footer {
     background-color: #333;
     color: #fff;
@@ -461,6 +485,7 @@ a.btn.btn-class:hover {
 }
 .col.article-list {
     box-shadow: 1px 1px 5px #0000005c;
+    margin-top: 10px;
 }
 .row.articles-inx {
     display: grid;
