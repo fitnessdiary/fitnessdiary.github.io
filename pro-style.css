@@ -464,6 +464,9 @@ aside.bd-sidebar img {
 }
 
 /*blog html css Start*/
+.container.content p {
+    font-size: 23px;
+}
 .bloghtml h2 {
     text-align: center;
     color: #e40d0d;
