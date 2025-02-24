@@ -91,7 +91,7 @@ margin: 5px 0;
 }
 ul.list-unstyled li a:hover {
 text-decoration: underline;
-background: #ccc;
+color: #0779e4;
 }
 ul.ref-link li a{
     text-decoration: none;
@@ -355,7 +355,7 @@ aside.bd-sidebar img {
     padding: 0;
 }
 .footer-content ul li {
-    margin: 10px 0;
+    margin: 0;
 }
 .footer-content ul li a {
     color: #fff;
@@ -544,14 +544,13 @@ figure.Portfolioimg {
     display: flex;
     justify-content: center;
 }
-.view-more {
-    
-}
+
 .portfolio-body:hover .view-more {
     color: #020202;
 }
-/*blog html css End*/
-
+/*--------------------------------------
+        blog html css End
+---------------------------------------*/
 @media (max-width: 768px) {
     header nav {
         float: none;
@@ -571,7 +570,6 @@ figure.Portfolioimg {
     a.navbar-brand.mobile-view {
         display: block;
     }
-
     .showcase h1 {
         font-size: 30px;
     }
@@ -588,6 +586,12 @@ figure.Portfolioimg {
     .footer-content div {
         margin: 10px 0;
         min-width: auto;
+    }
+    ul.footer-list li {
+        list-style-type: none;
+    }
+    ul.footer-list li:hover a{
+        list-style-type: underline;
     }
     .row.articles,.row.articles-blog {
         grid-template-columns: repeat(1, 1fr);
