@@ -374,6 +374,18 @@ aside.bd-sidebar img {
     justify-content: center;
     align-items: center;
 }
+.footer-list {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+.footer-list li a {
+    transition: color 0.3s ease-in-out;
+    color: #fff; /* Set text color */
+}
+.footer-list li a:hover {
+    color: #12f3aa; /* Change color on hover (use any color you prefer) */
+}
 /* Scroll to Top Button */
 #scrollToTopBtn {
     display: none;
