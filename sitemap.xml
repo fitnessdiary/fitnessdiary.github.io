@@ -6,6 +6,31 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://fitnessdiary.github.io/about.html</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fitnessdiary.github.io/contact.html</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fitnessdiary.github.io/our-vision.html</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fitnessdiary.github.io/privacy-policy.html</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fitnessdiary.github.io/terms-and-conditions.html</loc>
+    <lastmod>2025-02-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://fitnessdiary.github.io/health-tips.html</loc>
     <lastmod>2024-08-14</lastmod>
     <priority>0.8</priority>
