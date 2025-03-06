@@ -72,40 +72,7 @@
 	</head>
 	<body>
 		<!-- Navbar Section Start-->
-        <div class="bg-light nav-bg sticky-top">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light container">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" id="customToggleBtn">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a class="navbar-brand mobile-view" href="#"><span>Fitness Diary</span></a>
-                    <div class="collapse navbar-collapse" id="customNavbar">
-                        <div class="desktop-view">
-                            <a class="navbar-brand" href="https://fitnessdiary.github.io/"><span>Fitness Diary</span></a>
-                        </div>
-                        <div class="navbar-css">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="https://fitnessdiary.github.io/">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://fitnessdiary.github.io/health-tips.html">Health Tips</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://fitnessdiary.github.io/product-reviews.html">Product Reviews</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://fitnessdiary.github.io/how-to.html">How To</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://fitnessdiary.github.io/subscribe.html">Subscribe</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
+        <div class="bg-light nav-bg sticky-top" id="navbar-container"></div>
 		<!-- Navbar Section End-->
 
 		<div class="container wrap">
@@ -125,66 +92,53 @@
 						</div>
 					</div>
 				</article>
-				
-				<aside class="bd-sidebar col-sm-4 text-center">
-                    <div class="col-sm">
-                        <div class="card">
-                            <div class="card-img">
-                                <img class="card-img-top" src="https://fitnessdiary.github.io/afitnessdiary.png" alt="Fitness Diary">
-                            </div>
-                            <div class="card-body">
-                                <h2 class="card-title text-center">Fitness Diary</h2>
-                                <p class="card-text-welcome">Welcome to Fitness Diary, it is a diary that helps you get fit and healthy with easy tips, expert advice, and great product recommendations. We provide simple workout plans, healthy eating ideas, and fun challenges to keep you motivated on your fitness journey.</p>
-                                <a href="https://fitnessdiary.github.io/health-tips.html" class="btn btn-primary">See More</a>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
+				<aside id="sidebar-container-page" class="bd-sidebar col-sm-4 text-center"></aside>
 			</div>
 		</div>
-        
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-content">
-                    <div>
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="https://fitnessdiary.github.io/about.html">About Us</a></li>
-                            <li><a href="https://fitnessdiary.github.io/contact.html">Contact Us</a></li>
-                            <li><a href="https://fitnessdiary.github.io/our-vision.html">Vision</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>Services</h4>
-                        <ul>
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">Product Reviews</a></li>
-                            <li><a href="#">Consultation</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>Contact Us</h4>
-                        <ul>
-                            <li><a href="#"><b>Email:</b> thefitnessdiaryus@gmail.com</a></li>
-                            <li><b>Location:</b> 1592 Peck Court, Irvine, CA 92714</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-credit d-flex justify-content-between align-items-center flex-wrap p-3">
-                    <div>
-                        <p class="mb-0">© Fitness Diary. All rights reserved. Developed by 
-                            <a href="https://mdjahidshah.github.io/" target="_blank" class="text-decoration-none">MJS</a>.
-                        </p>
-                    </div>
-                    <div>
-                        <ul class="footer-list d-flex gap-3 mb-0">
-                            <li><a href="https://fitnessdiary.github.io/privacy-policy.html" class="text-decoration-none">Privacy Policy</a></li>
-                            <li><a href="https://fitnessdiary.github.io/terms-and-conditions.html" class="text-decoration-none">Terms of Use</a></li>
-                        </ul>
-                    </div>
-                </div>                
-            </div>
-        </footer>
+        <!-- Footer Section-->
+		<footer class="footer" id="footer-container">
+		</footer>
+		<!-- End of Footer Section -->
+		<script>
+			// Function to load navbar and footer
+			document.addEventListener("DOMContentLoaded", function () {
+				fetch("navbar.html")
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById("navbar-container").innerHTML = data;
+					})
+					.catch(error => console.error("Error loading the navbar:", error));
+				
+				fetch("page-navbar.html")
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById("navbar-container-page").innerHTML = data;
+					})
+					.catch(error => console.error("Error loading the navbar:", error));
+				
+				fetch("related-post.html")
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById("relatedpost-container-page").innerHTML = data;
+					})
+					.catch(error => console.error("Error loading the navbar:", error));
+
+				
+				fetch("sidebar.html")
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById("sidebar-container-page").innerHTML = data;
+					})
+					.catch(error => console.error("Error loading the navbar:", error));
+
+				fetch("footer.html")
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById("footer-container").innerHTML = data;
+					})
+					.catch(error => console.error("Error loading the footer:", error));
+			});
+		</script>
 <!-- Scroll to Top Button -->
 <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">Top</button>
 

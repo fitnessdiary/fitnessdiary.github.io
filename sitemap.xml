@@ -16,11 +16,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fitnessdiary.github.io/our-vision.html</loc>
-    <lastmod>2025-02-24</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fitnessdiary.github.io/privacy-policy.html</loc>
     <lastmod>2025-02-24</lastmod>
     <priority>0.8</priority>
@@ -29,25 +24,5 @@
     <loc>https://fitnessdiary.github.io/terms-and-conditions.html</loc>
     <lastmod>2025-02-24</lastmod>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fitnessdiary.github.io/health-tips.html</loc>
-    <lastmod>2024-08-14</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fitnessdiary.github.io/product-reviews.html</loc>
-    <lastmod>2024-08-14</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fitnessdiary.github.io/how-to.html</loc>
-    <lastmod>2024-08-14</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fitnessdiary.github.io/why-is-water-important-in-life.html</loc>
-    <lastmod>2025-03-06</lastmod>
-    <priority>0.6</priority>
   </url>
 </urlset>
