@@ -135,7 +135,7 @@ padding: 15px 10px;
 }
 .card-img img {
     width: 200px;
-    height: 200px;
+    height: auto;
     border-radius: 50%;
 }
 p.card-text-welcome {
